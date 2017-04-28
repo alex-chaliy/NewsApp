@@ -1,0 +1,2 @@
+# NewsApp
+Nativescript • News application
