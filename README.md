@@ -6,15 +6,15 @@ nativescript docs • https://docs.nativescript.org
 ## Installation ( android )
 ![Android](./docs_src/img/android.png)
 ```bash
-tns build android
-tns run android
+npm run build.android
+npm run start.android.device
 ```
 
 ## Installation ( ios )
 ![IOS](./docs_src/img/ios.png)
 ```bash
-tns build ios
-tns run ios
+npm run build.ios
+npm run start.ios.device
 ```
 
 <br/>
@@ -23,11 +23,6 @@ tns run ios
 
 ## To use `nmp` command Node.js >=6.9 must be installed
 NodeJS Download • https://nodejs.org/en/download
-
-## To use `tns` command you should globally install nativescript npm package 
-```bash
-npm install -g nativescript
-```
 
 <br/>
 
