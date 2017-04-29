@@ -6,7 +6,7 @@ logic, and to set up your page’s data binding.
 
 import { EventData } from 'data/observable';
 import { Page } from 'ui/page';
-import { MainViewModel } from './main-view-model';
+import { MainViewModel } from './main.view-model';
 
 // Event handler for Page "navigatingTo" event attached in main-page.xml
 export function navigatingTo(args: EventData) {

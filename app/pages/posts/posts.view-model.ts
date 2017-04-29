@@ -1,6 +1,6 @@
 import {Observable} from 'data/observable';
 
-export class MainViewModel extends Observable {
+export class PostsViewModel extends Observable {
 
     private _counter: number;
     private _message: string;
@@ -16,7 +16,7 @@ export class MainViewModel extends Observable {
     get message(): string {
         return this._message;
     }
-    
+
     set message(value: string) {
         if (this._message !== value) {
             this._message = value;
