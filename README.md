@@ -6,14 +6,14 @@ nativescript docs • https://docs.nativescript.org
 ## Installation ( android )
 ![Android](./docs_src/img/android.png)
 ```bash
-tns build android
+npm i
 tns run android
 ```
 
 ## Installation ( ios )
 ![IOS](./docs_src/img/ios.png)
 ```bash
-tns build ios
+npm i
 tns run ios
 ```
 
