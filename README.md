@@ -4,8 +4,10 @@ Nativescript • News application
 nativescript docs • https://docs.nativescript.org
 
 ## Installation ( android )
+
 ![Android](./docs_src/img/android.png)
 ```bash
+npm i
 npm run build.android
 npm run start.android.device
 ```
@@ -13,6 +15,7 @@ npm run start.android.device
 ## Installation ( ios )
 ![IOS](./docs_src/img/ios.png)
 ```bash
+npm i
 npm run build.ios
 npm run start.ios.device
 ```
