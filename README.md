@@ -27,3 +27,6 @@ NodeJS Download • https://nodejs.org/en/download
 <br/>
 
 markdown docs • https://guides.github.com/features/mastering-markdown
+
+## Original build repo
+https://github.com/NathanWalker/angular-seed-advanced
