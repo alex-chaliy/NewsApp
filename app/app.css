@@ -23,7 +23,7 @@ components that have the btn class name.
 /*@blue: #00adef; // second color*/
 
 .action-bar {
-    background-color: #f9903c;
+    background-color: #000;
     color: #fff;
 }
 
@@ -31,7 +31,7 @@ components that have the btn class name.
 .btn {
     font-size: 18;
     color: #fff;
-    background-color: #f9903c;
+    background-color: #555;
     border-color: #eee;
     border-width: 3;
     border-radius: 10;
@@ -46,5 +46,4 @@ Label {
 }
 .title-1 {
     font-size: 30;
-    color: #00adef;
 }

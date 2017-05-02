@@ -2,10 +2,40 @@ import {Observable} from 'data/observable';
 
 import * as app from 'application';
 
+
+import listViewModule = require("ui/list-view");
+import observableArray = require("data/observable-array");
+import labelModule = require("ui/label");
+
 export class MainViewModel extends Observable {
 
     private _counter: number;
     private _message: string;
+
+    myItems: Array<string> = [
+        "apple",
+        "banana",
+        "pineapple",
+        "appricote",
+        "pear",
+        "plum",
+        "strawberry",
+        "strongberry",
+        "blueberry",
+        "apple",
+        "pineapple",
+        "appricote",
+        "pear",
+        "banana",
+        "pineapple",
+        "appricote",
+        "pear",
+        "plum",
+        "strawberry",
+        "strongberry",
+        "blueberry",
+        "apple"
+    ];
 
     constructor() {
         super();
