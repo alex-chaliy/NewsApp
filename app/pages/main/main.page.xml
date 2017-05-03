@@ -5,11 +5,12 @@
         </ActionBar>
     </Page.actionBar>
             
-    <ListView items="{{ myItems }}">
+    <ListView items="{{ newsList }}" separatorColor="#0f0">
         <ListView.itemTemplate >
-            <StackLayout class="list-group-item">
-                <Label text="{{ 'fruit: ' + name }}" textWrap="true" class="title" />
-                <Label text="{{ 'quantity: ' + quantity }}" textWrap="true" class="title" />
+            <StackLayout class="newItem">
+                <Label text="{{ title }}" class="newItem-title" />
+                <Label text="{{ description }}" class="newItem-description" />
+                <Image src="{{ imageLink }}" class="newItem-image" />
             </StackLayout>
         </ListView.itemTemplate>
     </ListView>

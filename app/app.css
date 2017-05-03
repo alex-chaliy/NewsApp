@@ -27,7 +27,6 @@ components that have the btn class name.
     color: #fff;
 }
 
-
 .btn {
     font-size: 18;
     color: #fff;
@@ -41,9 +40,20 @@ components that have the btn class name.
 }
 
 
-Label {
-    margin: 10 0 20;
+/* News List */
+ListView {
+    separator-color: transparent;
 }
-.title-1 {
+.newItem {
+    border: none;
+    padding: 20 0;
+}
+.newItem-title {
+    padding: 10 20 0;
     font-size: 30;
 }
+.newItem-description {
+    padding: 0 20 10;
+    font-size: 15;
+}
+/* end - News List */

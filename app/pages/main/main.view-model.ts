@@ -7,36 +7,35 @@ import listViewModule = require("ui/list-view");
 import observableArray = require("data/observable-array");
 import labelModule = require("ui/label");
 
+interface INew {
+    title: string;
+    description: string;
+    imageLink: string;
+}
+
 export class MainViewModel extends Observable {
 
     private _counter: number;
     private _message: string;
 
-    public myItems: Array<any> = [
-        {name: 'apple', quantity: 42 },
-        {name: 'banana', quantity: 7 },
-        {name: 'pineapple', quantity: 3 },
-        {name: 'appricote', quantity: 9 },
-        {name: 'pear', quantity: 5 },
-        {name: 'plum', quantity: 11 },
-        {name: 'strawberry', quantity: 1 },
-        {name: 'blueberry', quantity: 0 },
-        {name: 'appricote', quantity: 9 },
-        {name: 'pear', quantity: 5 },
-        {name: 'plum', quantity: 11 },
-        {name: 'apple', quantity: 42 },
-        {name: 'banana', quantity: 7 },
-        {name: 'pineapple', quantity: 3 },
-        {name: 'strawberry', quantity: 1 },
-        {name: 'blueberry', quantity: 0 },
-        {name: 'appricote', quantity: 9 },
-        {name: 'pear', quantity: 5 },
-        {name: 'plum', quantity: 11 },
-        {name: 'strawberry', quantity: 1 },
-        {name: 'blueberry', quantity: 0 },
-        {name: 'appricote', quantity: 9 },
-        {name: 'pear', quantity: 5 },
-        {name: 'plum', quantity: 11 }
+    public newsList: Array<any> = [
+        {title: 'New 1', imageLink: 'http://i.investopedia.com/dimages/graphics/bitcoin.jpg',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit voluptate, cupiditate dolorum corrupti vero, culpaitaque ab minima, eveniet deserunt ratione maiores! Officiis a delectus, dicta inventore, voluptas reprehenderit.' },
+
+        {title: 'New 2', imageLink: 'http://mwb-india.com/wp-content/uploads/2016/12/bitcoin.jpg',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit voluptate, cupiditate dolorum corrupti vero, culpaitaque ab minima, eveniet deserunt ratione maiores! Officiis a delectus, dicta inventore, voluptas reprehenderit.' },
+
+        {title: 'New 3', imageLink: 'https://www.invoiceninja.com/wp-content/uploads/2015/07/bitcoin1.png',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit voluptate, cupiditate dolorum corrupti vero, culpaitaque ab minima, eveniet deserunt ratione maiores! Officiis a delectus, dicta inventore, voluptas reprehenderit.' },
+
+        {title: 'New 4', imageLink: 'https://trezor.io/static/images/logos/insidebtc-logo.png',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit voluptate, cupiditate dolorum corrupti vero, culpaitaque ab minima, eveniet deserunt ratione maiores! Officiis a delectus, dicta inventore, voluptas reprehenderit.' },
+
+        {title: 'New 5', imageLink: 'https://bitnovosti.files.wordpress.com/2017/02/s3-amazonaws-commain-newsbtc-images20160608175752bitcoin-halving1-1024x475-65dec965b644e10588dcf0d2da7ce56d077c757e1.png?w=700',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit voluptate, cupiditate dolorum corrupti vero, culpaitaque ab minima, eveniet deserunt ratione maiores! Officiis a delectus, dicta inventore, voluptas reprehenderit.' },
+
+        {title: 'New N', imageLink: 'http://historyofbitcoin.org/assets/img/shots/first-bitcoin-transaction.png',
+         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, suscipit voluptate, cupiditate dolorum corrupti vero, culpaitaque ab minima, eveniet deserunt ratione maiores! Officiis a delectus, dicta inventore, voluptas reprehenderit.' }
     ];
 
     constructor() {
