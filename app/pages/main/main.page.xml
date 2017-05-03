@@ -6,12 +6,12 @@
     </Page.actionBar>
             
     <ListView items="{{ myItems }}">
-        <ListView.itemTemplates>
-            <template let-i="item">
-                <Label text="{{ index || 'Downloading...' }}" textWrap="true" class="title" />
-            </template>
-        </ListView.itemTemplates>
-        
+        <ListView.itemTemplate >
+            <StackLayout class="list-group-item">
+                <Label text="{{ 'fruit: ' + name }}" textWrap="true" class="title" />
+                <Label text="{{ 'quantity: ' + quantity }}" textWrap="true" class="title" />
+            </StackLayout>
+        </ListView.itemTemplate>
     </ListView>
 <!--
     <StackLayout orientation="vertical">

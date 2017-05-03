@@ -12,29 +12,31 @@ export class MainViewModel extends Observable {
     private _counter: number;
     private _message: string;
 
-    myItems: Array<string> = [
-        "apple",
-        "banana",
-        "pineapple",
-        "appricote",
-        "pear",
-        "plum",
-        "strawberry",
-        "strongberry",
-        "blueberry",
-        "apple",
-        "pineapple",
-        "appricote",
-        "pear",
-        "banana",
-        "pineapple",
-        "appricote",
-        "pear",
-        "plum",
-        "strawberry",
-        "strongberry",
-        "blueberry",
-        "apple"
+    public myItems: Array<any> = [
+        {name: 'apple', quantity: 42 },
+        {name: 'banana', quantity: 7 },
+        {name: 'pineapple', quantity: 3 },
+        {name: 'appricote', quantity: 9 },
+        {name: 'pear', quantity: 5 },
+        {name: 'plum', quantity: 11 },
+        {name: 'strawberry', quantity: 1 },
+        {name: 'blueberry', quantity: 0 },
+        {name: 'appricote', quantity: 9 },
+        {name: 'pear', quantity: 5 },
+        {name: 'plum', quantity: 11 },
+        {name: 'apple', quantity: 42 },
+        {name: 'banana', quantity: 7 },
+        {name: 'pineapple', quantity: 3 },
+        {name: 'strawberry', quantity: 1 },
+        {name: 'blueberry', quantity: 0 },
+        {name: 'appricote', quantity: 9 },
+        {name: 'pear', quantity: 5 },
+        {name: 'plum', quantity: 11 },
+        {name: 'strawberry', quantity: 1 },
+        {name: 'blueberry', quantity: 0 },
+        {name: 'appricote', quantity: 9 },
+        {name: 'pear', quantity: 5 },
+        {name: 'plum', quantity: 11 }
     ];
 
     constructor() {
